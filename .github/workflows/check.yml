@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v7
       - name: Check required files
         run: |
-          test -f README0.md
+          test -f README.md
           test -f index.html
