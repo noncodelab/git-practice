@@ -1,0 +1,15 @@
+name: Check project files
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check required files
+        run: |
+          test -f README0.md
+          test -f index.html
